@@ -1,5 +1,52 @@
 # Changelog
 
+## [1.0.0](https://github.com/toopy/helm-charts/compare/mailu-v1.1.1...mailu-1.0.0) (2023-04-20)
+
+
+### Features
+
+* add support for network policy ([#46](https://github.com/toopy/helm-charts/issues/46)) ([e42623b](https://github.com/toopy/helm-charts/commit/e42623b11b3bdde6c7c3678d5a1450e0af18e76d))
+* Add support for TLS settings ([07fad3a](https://github.com/toopy/helm-charts/commit/07fad3a81bb823ca979afdc1dca0d4944d4e7775))
+* Added oletools component ([0a4f95f](https://github.com/toopy/helm-charts/commit/0a4f95f3d0d42a5a42b9d3db612ff6afb2a62628))
+* Added support for WILDCARD_SENDERS ([f72db8d](https://github.com/toopy/helm-charts/commit/f72db8d78dd0de4d77ad8085dfafe5de0f38cab8))
+* Refactor env vars ([#50](https://github.com/toopy/helm-charts/issues/50)) ([07feb7a](https://github.com/toopy/helm-charts/commit/07feb7a2c07e3127bac8f90fe5a283adb35817bb))
+* Updated Mailu version to 2.0.5 ([6c79a73](https://github.com/toopy/helm-charts/commit/6c79a73b99cd252db200970b323a1c44525b7cbf))
+
+
+### Bug Fixes
+
+* [BUG] Helm error when deploying with webdav.enabled=true because of missing template [#232](https://github.com/toopy/helm-charts/issues/232) ([91cd49e](https://github.com/toopy/helm-charts/commit/91cd49e57166f1d64f2e667b96efe5ba1f01d7c1))
+* [BUG] postfix-overrides ConfigMap will never render [#234](https://github.com/toopy/helm-charts/issues/234) ([bc73acc](https://github.com/toopy/helm-charts/commit/bc73acca4f24d162716c73fad6833ffb7dbf9f02))
+* add missing container registry for admin ([1cb6a88](https://github.com/toopy/helm-charts/commit/1cb6a887518e115761ea0260b675969e60ea3ba1))
+* Add missing container registry for admin ([a051d71](https://github.com/toopy/helm-charts/commit/a051d7196ee3cebbf7175395eb65374cea877cb0))
+* Add missing container registry for admin ([a051d71](https://github.com/toopy/helm-charts/commit/a051d7196ee3cebbf7175395eb65374cea877cb0))
+* Added extra volumes for all pods ([#48](https://github.com/toopy/helm-charts/issues/48)) ([a466bb0](https://github.com/toopy/helm-charts/commit/a466bb005d6e3ce054edc0ea4b976b0dd89297bf))
+* cleaned env vars for addresses ([11eeea0](https://github.com/toopy/helm-charts/commit/11eeea0738cd56ef881acfa1f0dfe850733ebce3))
+* cleaned env vars for addresses ([#65](https://github.com/toopy/helm-charts/issues/65)) ([1768f6a](https://github.com/toopy/helm-charts/commit/1768f6abf94a61e7379202f4815f8c775cf1774d))
+* Fixed Dovecot probes ([41f3497](https://github.com/toopy/helm-charts/commit/41f349766e5c7a4084befd0b2b62a6c3081f5e6b))
+* fixed encoding of relayuser and relaypassword ([0209240](https://github.com/toopy/helm-charts/commit/02092404f1d060699fff81554b54872bcfbb6479))
+* Fixed env var for antispam ([c180724](https://github.com/toopy/helm-charts/commit/c18072403f204c68aa2766c29f44255f0aa310a3))
+* Fixed env var for antispam ([#63](https://github.com/toopy/helm-charts/issues/63)) ([00e62e6](https://github.com/toopy/helm-charts/commit/00e62e65011ffe748061fcc1ef126cc9d88678e9))
+* Fixed sieve support ([91792ff](https://github.com/toopy/helm-charts/commit/91792ffbc0811d1c0252603c53c17d1e25d646a6))
+* fixed typo in fetchmail deployment ([baca17a](https://github.com/toopy/helm-charts/commit/baca17a2c12019a8504f3a72b17809690c2d79fc))
+* fixed typo when external service set to NodePort ([741a90d](https://github.com/toopy/helm-charts/commit/741a90daf10d45f181e253f06c863919b00e9dc3))
+* migrate container registry to ghcr.io ([77ad28a](https://github.com/toopy/helm-charts/commit/77ad28a41c9e956fd538f949bab0d36dcd1d9237))
+* Restrict web ports to ingress-nginx when network policies are enabled ([e21cc8b](https://github.com/toopy/helm-charts/commit/e21cc8bcdecfcba509bfaea01609858393a2730e))
+* Unset default value for realIpFrom ([#53](https://github.com/toopy/helm-charts/issues/53)) ([1d1aa9a](https://github.com/toopy/helm-charts/commit/1d1aa9ac6a2ffbd3729cca8d44e431554b468f57))
+* Updated documentation ([#55](https://github.com/toopy/helm-charts/issues/55)) ([7c52126](https://github.com/toopy/helm-charts/commit/7c521269611c22bad2070b67544e2a6bc162b647))
+
+
+### Miscellaneous Chores
+
+* Release 1.0.0 ([db41cf5](https://github.com/toopy/helm-charts/commit/db41cf50d6567177aa13e2ff43320c8df733e8e0))
+* release 1.0.0-beta.26 ([50b5a28](https://github.com/toopy/helm-charts/commit/50b5a287b581f7ac7fa91c988b947fbbe2358856))
+* release 1.0.0-beta.27 ([607c463](https://github.com/toopy/helm-charts/commit/607c463f0a01b865bc8189d7ad6360e71c99e2cb))
+* release 1.0.0-beta.28 ([dff244e](https://github.com/toopy/helm-charts/commit/dff244e2cd61a01fa1de4b11d101f7c3db67b4b9))
+* release 1.0.0-beta.29 ([4892a2a](https://github.com/toopy/helm-charts/commit/4892a2a5757697d5ffc47bd2e6590f65fdad4898))
+* release 1.0.0-beta.30 ([0e7c8af](https://github.com/toopy/helm-charts/commit/0e7c8af3d49fdd874a31d82a19db910197ed77ad))
+* release 1.0.0-beta.31 ([87fa8e8](https://github.com/toopy/helm-charts/commit/87fa8e8b96fca5cbaf0cef08d094ba3f51dd4233))
+* release 1.0.0-beta.32 ([b31d9f4](https://github.com/toopy/helm-charts/commit/b31d9f4bbdd8d7ff161e3fadd689798e91437fd7))
+
 ## [1.1.1](https://github.com/Mailu/helm-charts/compare/mailu-1.1.0...mailu-1.1.1) (2023-04-19)
 
 
